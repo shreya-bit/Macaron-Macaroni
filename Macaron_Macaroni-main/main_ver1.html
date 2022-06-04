@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macaron Macaroni</title>
+    <link rel="shortcut icon" type="image" href="img/Project - Drawing updated.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+ <header>
+    <!---now hyperlinks to the separate pages-->
+
+    <!--a href="#" class="logo"><i class="fas fa-utensils"></i>food</a-->
+    <nav class="navbar">
+
+     <ul>
+
+      <li><a href="main_ver1.php">Home</a></li>
+      <li><a href="veg.php" target=" _blank">Vegetarian Recipes</a></li>
+      <li><a href="all.php" target=" _blank">All Recipes</a></li>
+      <li><a href="desserts.php" target=" _blank">Desserts</a></li>
+      <li><a href="main_course.php" target=" _blank">Breakfast & Brunch</a></li>
+      <li><a href="drinks.php" target=" _blank">Beverages and Drinks</a></li>
+      <li><a href="appetizers.php" target=" _blank">Appetizers</a></li>
+      <li><a href="cuisines.php" target="_blank">Cuisines</a>
+        <div class="dropdown">
+            <ul>
+                <li><a href="Italian.php">Italian</a></li>
+                <li><a href="Chinese.php">Chinese</a></li>
+                <li><a href="NorthIndian.php">North Indian</a></li>
+                <li><a href="SouthIndian.php">South Indian</a></li>
+            </ul>
+        </div></li>
+      
+      <li><a href="login.html" class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</a></li>
+      <!--li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li-->
+     
+     </ul>
+     </div>
+
+    </nav>
+
+    <!--home section starts here-->
+
+    <section class="home" id="home">
+
+      <div class="content">
+
+          <h1><span>MACARON MACARONI</span></h1>
+          <h2>The Recipe Portal</h2>
+          <h3>What are you looking for?</h3>
+
+           <div class="formbox">
+            <!--input type="text" class="search" placeholder="What are you looking for"-->
+            <select name="options" class="search" onchange="location = this.value;">
+            <option value="None" font-style='Sans-serif'>What are you looking for</option>
+            <option value="recipecategory.html" class = target="  _blank">Recipes</option>
+            <option value="list.html" target="  _blank">Type an ingredient</option>
+            <button class="search-btn" type="button">Search</button>
+
+            </select>
+            </div>
+           </div>
+
+      </div> 
+
+      <div class ="imgbox">
+          <img src="img/macaron_PNG104.png" alt="fast food PNG image with transparent background" class="Mac">
+      </div>
+
+          <ul class="thumb">
+            <li><img src="img/macaron_PNG104.png" onclick="imgSlider('img/macaron_PNG104.png')"></li>
+            <li><img src="img/lalala.png" onclick="imgSlider('img/—Pngtree—delicious rich spiral pasta national_5547880.png')"></li>
+          </ul>
+
+        <br>
+        <br> 
+        
+     </section> 
+
+     <script type="text/javascript">
+        
+        function imgSlider(anything){
+          document.querySelector('.Mac').src = anything;
+       }
+    </script>
+     
+    <!-- BODY SECTION ENDS HERE -->
+
+  </header>
+
+  <!-- HEADER SECTION ENDS HERE -->
+
+  <!--ABOUT SECTION STARTS HERE-->
+
+  <section class="about" id="about">
+
+    <div class="image" data-aos="fade-right"></div>
+
+      <div class="content" data-aos="fade-left">
+        <h3>a word about us</h3>
+        <p>Here we speak about our project Macaron Macaroni.Here we speak about our project Macaron Macaroni.</p>
+        <p>Here we speak about our project Macaron Macaroni.Here we speak about our project Macaron Macaroni.</p>
+        <a href="#"><button class="button">learn more</button></a>
+      </div>
+
+  </section>
+
+  <!-- ABOUT SECTION ENDS HERE -->
+
+   <!--CUISINES SECTION STARTS HERE-->
+
+<section class="favourites" id="favourites" >
+
+    <h1 class="heading"> our <span>FAVOURITES</span> </h1>
+
+    <div class="box-container" data-aos="fade-right">
+
+        <div class="box">
+
+            <img class="image" src="img/samosa.jpg" alt="">
+            <div class="content">
+                <img src="images/s-1.png" alt="">
+                <h3>Item 1</h3>
+                <p>Blah blah blah</p>
+            </div>
+
+        </div>
+
+
+        <div class="box">
+
+            <img class="image" src="img/cake.jpg" alt="">
+            <div class="content">
+                <img src="images/s-2.png" alt="">
+                <h3>Item 2</h3>
+                <p>Blah blah blah</p>
+            </div>
+
+        </div>
+
+
+        <div class="box">
+
+            <img class="image" src="img/burger.jpg" alt="">
+            <div class="content">
+                <img src="images/s-3.png" alt="">
+                <h3>Item 3</h3>
+                <p>Blah blah</p>
+            </div>
+
+        </div>
+
+
+        <div class="box">
+
+            <img class="image" src="img/cake.jpg" alt="">
+            <div class="content">
+                <img src="images/s-4.png" alt="">
+                <h3>Item 4</h3>
+                <p>Blah Blah Blah</p>
+            </div>
+
+        </div>
+
+
+        <div class="box">
+
+            <img class="image" src="img/pancakes.jpg" alt="">
+            <div class="content">
+                <img src="images/s-5.png" alt="">
+                <h3>Item 5</h3>
+                <p>Blah blah blah</p>
+            </div>
+
+        </div>
+
+
+        <div class="box">
+
+            <img class="image" src="img/pexels-yente-van-eynde-2403391.jpg" alt="">
+            <div class="content">
+                <img src="images/s-6.png" alt="">
+                <h3>Item 6</h3>
+                <p>Blah Blah Blah</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+   <!--Section cuisines we offer start here-->
+
+<section class="cuisines" id="cuisines">
+
+    <h1 class="heading"><span>Cuisines</span> we offer</h1>
+    
+    <ul class="list" data-aos="fade-down">
+
+        <li class="btn" data-src="img/Italian.jpg">Italian</li>
+        <li class="btn active" data-src="img/Chinese.jpg">Chinese</li>
+        <li class="btn" data-src="img/North-Indian.jpg">North-Indian</li>
+        <li class="btn" data-src="img/South-Indian.jpg">South-Indian</li>
+
+    </ul>
+    
+    <div class="row" data-aos="fade-right">
+    
+        <div class="image" data-aos="fade-left">
+            <img src="img/Chinese.jpg" id="menu-img" alt="">
+        </div>
+    
+        <div class="content">
+
+            <div class="info">
+                <h3> <span>01.</span> Italian </h3>
+                <p>Life is all about exploring pasta-bilities.</p>
+            </div>
+
+            <div class="info">
+                <h3> <span>02.</span> Chinese </h3>
+                <p>Our love for chinese is PHO real!</p>
+            </div>
+
+            <div class="info">
+                <h3> <span>03.</span> North Indian </h3>
+                <p>Never a DAL moment around here</p>
+            </div>
+
+            <div class="info">
+                <h3> <span>04.</span> South Indian </h3>
+                <p>Dosa the best days of our lives!</p>
+            </div>
+
+        </div>
+    
+    </div>
+    
+</section>
+    
+    <!--Section our best recipes starts here-->
+
+<!--section class="best">
+
+      <div class="content">
+        <h2>Our <span>Best Recipes</span></h2>
+      </div>
+
+
+      <div class = "bluhh">
+        <div class ="wrapper">
+
+         <div class="card">
+           <img src="img/samosa.jpg">
+            <div class="info">
+              <h1> Samosa </h1>
+              <p> Blah blah blah blah</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+         </div>
+
+         <div class="card">
+          <img src="img/burger.jpg">
+           <div class="info">
+             <h1> Burger </h1>
+             <p> Blah blah blah blah</p>
+             <a href="#" class="btn">Read More</a>
+           </div>
+         </div>
+
+         <div class="card">
+          <img src="img/cake.jpg">
+           <div class="info">
+             <h1>Chocolate Cake</h1>
+             <p> Blah blah blah blah</p>
+             <a href="#" class="btn">Read More</a>
+           </div>
+         </div>
+
+        </div>
+       </div>
+  </section-->
+  
+  <section class="footer">
+
+    <div class="share">
+        <a href="#" class="btn">facebook</a>
+        <a href="#" class="btn">twitter</a>
+        <a href="#" class="btn">instagram</a>
+        <a href="#" class="btn">pinterest</a>
+        <a href="#" class="btn">linkedin</a>
+    </div>
+
+    <h1 class="credit"> created by <span> Shreya Shettar and Tejashree Krishna Murthy </span> | all rights reserved! </h1>
+
+  </section>
+  
+  
+
+
+  <!-- aos js cdn link  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+   <!-- jquery cdn link  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+   <!-- custom js file link  -->
+   <script src="script.js"></script>
+
+   <script>
+
+    AOS.init({
+        delay:400,
+        duration:1000
+    })
+
+    </script>
+</body>
+
+
+</html>

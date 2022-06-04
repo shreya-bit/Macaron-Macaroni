@@ -1,0 +1,119 @@
+.favourite{
+    min-height: 100vh;
+    padding:1rem 10%;
+    padding-top: 3rem;
+    /*background: #FDD2BF;*/
+    background: #FFEACA;
+    /*background-image: url(img/shapes.png);*/
+  }
+  
+  .favourite .heading{
+   text-align: center;
+   font-size: 1rem;
+   padding:0 .5rem;
+   color:#333;
+  }
+  
+  .favourite .box-container{
+   margin-top: 40px;
+   display: flex;
+   flex-wrap: wrap;
+   gap:1.5rem;
+  }
+  
+  .favourite .box-container .box{
+   flex:1 1 20rem;
+   position: relative;
+   overflow: hidden;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   border:.1rem solid rgba(0,0,0,.3);
+   cursor: pointer;
+   border-radius: .5rem;
+  }
+
+  .favourite .box-container .box .image{
+   height:100%;
+   width:100%;
+   object-fit: cover;
+   position: absolute;
+   top:-100%; left:0;
+  }
+
+  .favourite .box-container .box .content{
+   text-align: center;
+   background:#fff;
+   padding:1rem;
+  }
+  
+  .favourite .box-container .box .content img{
+   margin:1rem 0;
+  }
+  
+  .favourite .box-container .box .content h3{
+   font-size: 1.5rem;
+   color:#333;
+  }
+  
+  .favourite .box-container .box .content p{
+   font-size: 1rem;
+   color:#666;
+   padding:1rem 0;
+  }
+  
+  .favourite .box-container .box:hover .image{
+   top:0;
+  }
+  
+  /*.favourite .box-container .box:hover .content{
+   transform: translateY(100%);
+  }*/
+
+  .search{
+    height: 30px;
+    width: 320px;
+    padding: 30px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+  }
+
+  .wrapper{
+    max-width: 450px;
+    margin: 150px auto;
+    align-items: center;
+  }
+
+  .search{
+    background: #fff;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+    height: 30px;
+    width: 320px;
+    padding: 30px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+  }
+
+  .submit{
+     background: transparent;
+     
+  }
+  /*.search input{
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+  }*/
+  
+table, th, td{
+    border: 1px solid black;
+    padding: 1rem;
+    align-items: center;
+}

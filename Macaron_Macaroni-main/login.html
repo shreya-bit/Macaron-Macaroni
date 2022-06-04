@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macaron Macaroni</title>
+    <link rel="shortcut icon" type="image" href="img/Project - Drawing updated.png">
+    <link rel="stylesheet" href="stylesheetlogin.css">
+</head>
+
+<body>
+ <header>
+    <!---now hyperlinks to the separate pages-->
+    <!--a href="#" class="logo"><i class="fas fa-utensils"></i>food</a-->
+    <nav class="navbar">     
+     <ul>
+    
+        <li><a href="main_ver1.php">Home</a></li>
+        <li><a href="veg.php" target=" _blank">Vegetarian</a></li>
+        <li><a href="all.php" target=" _blank">All Recipes</a></li>
+        <li><a href="desserts.php" target=" _blank">Desserts</a></li>
+        <li><a href="main_course.php" target=" _blank">Breakfast</a></li>
+        <li><a href="drinks.php" target=" _blank">Beverages</a></li>
+        <li><a href="appetizers.php" target=" _blank">Appetizers</a></li>
+        <li><a href="Italian.php">Italian</a></li>
+      <li><a href="Chinese.php">Chinese</a></li>
+      <li><a href="NorthIndian.php">North Indian</a></li>
+      <li><a href="SouthIndian.php">South Indian</a></li>
+        <li><a href="login.html" class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;"> ADMIN Login</a></li>
+        <!--li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li-->
+       
+       </ul>
+    </nav> 
+        <div id='login-form'class='login-page'>
+        <div class="form-box">
+            <div class='button-box'>
+                <div id='btn'></div>
+                <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+            </div>
+            <form id='login' class='input-group-login'>
+                <input type='text'class='input-field'placeholder='Email Id' required >
+        <input type='password'class='input-field'placeholder='Enter Password' required>
+        <input type='checkbox'class='check-box'><span>Remember Password</span>
+        <button type='submit'class='submit-btn'>Log in</button>
+     </form>
+     <form id='register' class='input-group-register'>
+         <input type='text'class='input-field'placeholder='First Name' required>
+         <input type='text'class='input-field'placeholder='Last Name ' required>
+         <input type='email'class='input-field'placeholder='Email Id' required>
+         <input type='password'class='input-field'placeholder='Enter Password' required>
+         <input type='password'class='input-field'placeholder='Confirm Password'  required>
+         <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+                <button type='submit'class='submit-btn'>Register</button>
+         </form>
+        </div>
+    </div>
+</div>
+<script>
+    var x=document.getElementById('login');
+    var y=document.getElementById('register');
+    var z=document.getElementById('btn');
+    function register()
+    {
+        x.style.left='-400px';
+        y.style.left='50px';
+        z.style.left='110px';
+    }
+    function login()
+    {
+        x.style.left='50px';
+        y.style.left='450px';
+        z.style.left='0px';
+    }
+</script>
+<script>
+    var modal = document.getElementById('login-form');
+    window.onclick = function(event) 
+    {
+        if (event.target == modal) 
+        {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</header>
+</body>
+</html>
