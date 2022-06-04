@@ -1,2 +1,2 @@
 # Macaron-Macaroni
-Recipe Portal built using HTML&lt;CSS and Javascript front-end and PHP backend
+Recipe Portal built using HTML,CSS and Javascript front-end and PHP backend
